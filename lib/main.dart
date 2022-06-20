@@ -85,38 +85,36 @@ class _TransactionList extends State<TransactionList> {
         const SizedBox(
           height: 24.0,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 120.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Text(
-                'USD Account',
-                style: TextStyle(
-                  color: Colors.white54,
-                  fontSize: 24.0,
-                ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Spacer(flex: 2),
+            const Text(
+              'USD Account',
+              style: TextStyle(
+                color: Colors.white54,
+                fontSize: 24.0,
               ),
-              TextButton(
-                onPressed: () {},
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all(
-                    RoundedRectangleBorder(
-                      side: const BorderSide(
-                        color: Colors.white54,
-                      ),
-                      borderRadius: BorderRadius.circular(12.0),
+            ),
+            const Spacer(flex: 1),
+            TextButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    side: const BorderSide(
+                      color: Colors.white54,
                     ),
+                    borderRadius: BorderRadius.circular(12.0),
                   ),
                 ),
-                child: const Text(
-                  'Hide',
-                  style: TextStyle(color: Colors.white),
-                ),
               ),
-            ],
-          ),
+              child: const Text(
+                'Hide',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ],
         ),
         const SizedBox(
           height: 24.0,
